@@ -1,0 +1,42 @@
+@model MangaListViewModel
+
+<h4 class="bg-success text-white text-center p2">Mangás</h4>
+
+<table class="table table-sm table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Mangá</th>
+            <th>Autor</th>
+            <th>Gênero</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Manga m in Model?.Mangas ?? Enumerable.Empty<Manga>())
+        {
+            <tr class="@Model?.GetClass(m.Genero?.NomeGenero)">
+                <td>@m.MangaId</td>
+                <td>@m.NomeManga</td>
+                <td>@m.Autor?.NomeAutor</td>
+                <td>@m.Genero?.NomeGenero</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<form asp-action="Index" method="get">
+    <div class="form-group">
+        <label for="selecionaGenero">Gênero</label>
+        <select name="selecionaGenero" class="form-control">
+            <option disabled selected>Selecone Gênero</option>
+            @foreach (string genero in Model?.Generos ?? Enumerable.Empty<string>())
+            {
+                <option selected="@(genero == Model?.SelectedGenero)">
+                    @genero
+                </option>
+            }
+        </select>
+    </div>
+    <button class="btn btn-warning mt-2" type="submit">Selecionar</button>
+</form>

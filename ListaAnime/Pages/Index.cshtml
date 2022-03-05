@@ -1,0 +1,69 @@
+@page "/pages"
+@model IndexModel
+
+<h4 class="bg-primary text-white text-center p-2"> Mangás</h4>
+
+<table class="table table-sm table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Mangá</th>
+            <th>Autor</th>
+            <th>Gênero</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Manga m in Model.Mangas)
+        {
+            <tr class="@Model.GetClass(m.Genero?.NomeGenero)">
+                <td>@m.MangaId</td>
+                <td>@m.NomeManga</td>
+                <td>@m.Autor?.NomeAutor</td>
+                <td>@m.Genero?.NomeGenero</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<form asp-page="Index" method="get">
+    <div class="form-group">
+        <label for="selecionaGenero">Gênero</label>
+        <select name="selecionaGenero" class="form-control">
+            <option disabled selected> Seleciona Gênero</option>
+            @foreach (string genero in Model.Generos)
+            {
+                <option selected="@(genero == Model.SelecionaGenero)">
+                    @genero
+                </option>
+            }
+        </select>
+    </div>
+    <button class="btn btn-primary mt-2" type="submit">Seleciona Gênero</button>
+</form>
+
+@functions
+{
+    public class IndexModel : PageModel
+    {
+        private AppDbContext context;
+
+        public IndexModel(AppDbContext dbContext)
+        {
+            context = dbContext;
+        }
+
+        public IEnumerable<Manga> Mangas { get; set; } = Enumerable.Empty<Manga>();
+        public IEnumerable<string> Generos { get; set; } = Enumerable.Empty<string>();
+
+        [FromQuery]
+        public string SelecionaGenero { get; set; } = String.Empty;
+
+        public void OnGet()
+        {
+            Mangas = context.Mangas.Include(p => p.Autor).Include(p => p.Genero);
+            Generos = context.Generos.Select(l => l.NomeGenero).Distinct();
+        }
+
+        public string GetClass(string? genero) => SelecionaGenero == genero ? "bg-info text-black":"";
+    }
+}
