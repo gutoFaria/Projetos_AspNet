@@ -5,7 +5,6 @@ Abra o visual studio code e no terminal siga os passos: <br/>
     <p align="center">
         <img src="wwwroot/assets/inicio.png"/> <br/>
     </p>
-    
     <p padding= 10px>
       <font color="green"> dotnet add package Microsoft.EntityFrameworkCore.Tools</font><br/>
     <font color="green"> dotnet add package Microsoft.EntityFrameworkCore.</font><br/>
