@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\guto\\Desktop\\LoginAndRegister\\LoginAndRegister.csproj",
+  "FilePath": "c:\\Users\\guto\\Desktop\\Projetos_AspNet\\LoginAndRegister\\LoginAndRegister.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16298,38 +16298,38 @@
   "RootNamespace": "LoginAndRegister",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\guto\\Desktop\\LoginAndRegister\\Pages\\Shared\\_Layout.cshtml",
-      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\guto\\Desktop\\LoginAndRegister\\Pages\\Privacy.cshtml",
-      "TargetPath": "Pages\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\guto\\Desktop\\LoginAndRegister\\Pages\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\guto\\Desktop\\Projetos_AspNet\\LoginAndRegister\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\guto\\Desktop\\LoginAndRegister\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\guto\\Desktop\\Projetos_AspNet\\LoginAndRegister\\Pages\\Privacy.cshtml",
+      "TargetPath": "Pages\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\guto\\Desktop\\LoginAndRegister\\Pages\\Index.cshtml",
-      "TargetPath": "Pages\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\guto\\Desktop\\LoginAndRegister\\Pages\\Error.cshtml",
+      "FilePath": "c:\\Users\\guto\\Desktop\\Projetos_AspNet\\LoginAndRegister\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\guto\\Desktop\\LoginAndRegister\\Pages\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\guto\\Desktop\\Projetos_AspNet\\LoginAndRegister\\Pages\\Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\guto\\Desktop\\Projetos_AspNet\\LoginAndRegister\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\guto\\Desktop\\Projetos_AspNet\\LoginAndRegister\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\guto\\Desktop\\Projetos_AspNet\\LoginAndRegister\\Pages\\Shared\\_Layout.cshtml",
+      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     }
   ],

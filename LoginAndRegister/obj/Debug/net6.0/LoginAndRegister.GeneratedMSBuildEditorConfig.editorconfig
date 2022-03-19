@@ -8,37 +8,37 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LoginAndRegister
 build_property.RootNamespace = LoginAndRegister
-build_property.ProjectDir = c:\Users\guto\Desktop\LoginAndRegister\
+build_property.ProjectDir = c:\Users\guto\Desktop\Projetos_AspNet\LoginAndRegister\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\guto\Desktop\LoginAndRegister
+build_property.MSBuildProjectDirectory = c:\Users\guto\Desktop\Projetos_AspNet\LoginAndRegister
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/guto/Desktop/LoginAndRegister/Pages/Error.cshtml]
+[c:/Users/guto/Desktop/Projetos_AspNet/LoginAndRegister/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/guto/Desktop/LoginAndRegister/Pages/Index.cshtml]
+[c:/Users/guto/Desktop/Projetos_AspNet/LoginAndRegister/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/guto/Desktop/LoginAndRegister/Pages/Privacy.cshtml]
+[c:/Users/guto/Desktop/Projetos_AspNet/LoginAndRegister/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/guto/Desktop/LoginAndRegister/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/guto/Desktop/Projetos_AspNet/LoginAndRegister/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/guto/Desktop/LoginAndRegister/Pages/_ViewImports.cshtml]
+[c:/Users/guto/Desktop/Projetos_AspNet/LoginAndRegister/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/guto/Desktop/LoginAndRegister/Pages/_ViewStart.cshtml]
+[c:/Users/guto/Desktop/Projetos_AspNet/LoginAndRegister/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/guto/Desktop/LoginAndRegister/Pages/Shared/_Layout.cshtml]
+[c:/Users/guto/Desktop/Projetos_AspNet/LoginAndRegister/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-x0f3ck6dwl
