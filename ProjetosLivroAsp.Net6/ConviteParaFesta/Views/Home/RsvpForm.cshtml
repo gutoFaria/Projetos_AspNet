@@ -1,0 +1,44 @@
+@* //importando o modelo para o formulário  *@
+@model RespostaDoConvidado
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RsvpForm</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <form asp-action="RsvpForm" method="post" class="m-3">
+        <div asp-validation-summary="All"></div>
+        <div class="form-group">
+            <label asp-for="Nome" class="form-label">Seu nome:</label>
+            <input asp-for="Nome" class="form-control"/>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Email" class="form-label">Seu email:</label>
+            <input asp-for="Email" class="form-control"/>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Telefone" class="form-label">Seu telefone:</label>
+            <input asp-for="Telefone" class="form-control"/>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="IraComparecer" class="form-label">Irá Comparecer?</label>
+            <select asp-for="IraComparecer" class="form-control">
+                <option value="">Escolha uma opção</option>
+                <option value="true">Sim, estarei lá.</option>
+                <option value="false">Não, eu não poderei ir.</option>
+            </select>
+        </div>
+        <button asp-for="submit" class="btn btn-success mt-3">Confirmar </button>
+    </form>
+</body>
+</html>

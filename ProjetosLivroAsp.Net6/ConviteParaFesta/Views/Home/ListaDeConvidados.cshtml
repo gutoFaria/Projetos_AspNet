@@ -1,0 +1,41 @@
+@model IEnumerable<RespostaDoConvidado>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respostas</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+    <div class="text-center">
+    <h2 class="text-center">Lista de pessoas que participarão da festa</h2>
+    <table class="table table-bordered table-striped table-sm">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (RespostaDoConvidado item in Model)
+            {
+                <tr>
+                    <td>@item.Nome</td>
+                    <td>@item.Email</td>
+                    <td>@item.Telefone</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div>
+        <a asp-action="Index" class="btn btn-secondary">Tela Inicial</a> 
+        <a asp-action="RsvpForm" class="btn btn-secondary">Tela Cadastro</a> 
+    </div>
+    </div>
+</body>
+</html>

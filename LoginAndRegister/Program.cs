@@ -1,7 +1,14 @@
+using LoginAndRegister.Data;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<LogingDbContext>(opt => opt.UseSqlServer(connectionString));
+builder.Services.AddIdentity<IdentityUser,IdentityRole>().AddEntityFrameworkStores<LogingDbContext>();
 
 var app = builder.Build();
 
@@ -17,7 +24,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapRazorPages();

@@ -11,9 +11,12 @@ Abra o visual studio code e no terminal siga os passos: <br/>
     <p padding= 10px>
         <font color="green"> dotnet add package Microsoft.EntityFrameworkCore.Tools</font><br/>
         <font color="green"> dotnet add package Microsoft.EntityFrameworkCore.</font><br/>
+        <font color="green">dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore</font>
     </p>
   
 ###	SqlServer e string de conexão
-Crie a string de conexão utilizando bloco de notas e sqlmanager
-##### 1° Abra o sqlserver manager e copie 
 Confira nesse link como criar uma string de conexão [String de Conexao](https://www.youtube.com/watch?v=fZnEVPdjcic)
+
+## Migrações
+<p>dotnet ef migrations add InitialCreate</p>
+<p>dotnet ef database update</p>

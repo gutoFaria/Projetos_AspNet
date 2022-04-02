@@ -1,0 +1,28 @@
+@model RespostaDoConvidado
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body class="text-center">
+    <div>
+        <h1>Obrigado, @Model?.Nome !</h1>
+        @if(@Model?.IraComparecer == true)
+        {
+            @:Obrigrado por comparecer a nossa festa
+        }
+        else
+        {
+            @:É triste saber que não poderás comparecer
+        }
+    </div>
+    Confira <a asp-action="ListaDeConvidados" class="btn btn-secondary">aqui</a> a lista de convidados.
+</body>
+</html>
