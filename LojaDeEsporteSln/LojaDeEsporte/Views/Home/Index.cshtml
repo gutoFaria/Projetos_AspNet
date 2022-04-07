@@ -1,0 +1,18 @@
+@* para o retorno de uma lista de produtos *@
+@* @model IQueryable<Produto> *@
+@model ListaDeProdutos
+
+
+<h2>Bem vindo a loja de esporte!</h2>
+<div class='card-group'>
+    @foreach (var p in Model?.Produtos ?? Enumerable.Empty<Produto>())
+    {
+        <partial name="ProductSummary" model="p" />
+    }
+</div>
+
+
+<div page-model="@Model?.InformacaoDaPagina" page-action="Index" page-classes-enabled="true" page-class="btn"
+    page-class-normal="btn-outline-dark" page-class-selected="btn-primary" class="btn-group pull-right m-1">
+    >
+</div>

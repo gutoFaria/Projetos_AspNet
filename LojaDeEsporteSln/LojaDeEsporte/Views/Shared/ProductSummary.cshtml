@@ -1,0 +1,26 @@
+@model Produto
+<div class="card card-outline-primary m-1 p-1">
+    <div class="bg-faded p-1">
+        <img class="card-img-top" src="@Model?.ImagemUrl" style="max-width:100px; max-height:100px;" />
+        <h4>
+            @Model?.Nome
+            <span class="badge rounded-pill bg-primary text-white" style="float:right">
+                <small>@Model?.Preco.ToString("c")</small>
+            </span>
+        </h4>
+    </div>
+    <div class="card-text p-1">@Model?.Descricao</div>
+</div>
+@* 
+<div class="card " style="width: 18rem;">
+    <img class="card-img-top" src="@p.ImagemUrl" style="max-width:100px; max-height:100px;" />
+    <div class="card-body">
+        <h5 class="card-title">@p.Nome</h5>
+        <p class="card-text">@p.Descricao</p>
+        <span class="badge rounded-pill bg-primary text-white" style="float: right;">
+            <small>
+                @p.Preco.ToString("c")
+            </small>
+        </span>
+    </div>
+</div> *@
