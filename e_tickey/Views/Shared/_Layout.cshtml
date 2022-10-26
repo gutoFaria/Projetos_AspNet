@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - e_tickey</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/lumen.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/e_tickey.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        @* <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow
+            mb-3">
+            <div class="container-fluid">
+
+            <a class="navbar-brand" asp-area="" asp-controller="Movies" asp-action="Index">e_tickey</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+
+            <ul class="navbar-nav flex-grow-1">
+            <li class="navbar-nav flex-grow-1">
+            <a class="nav-link text-dark" asp-controller="Movies" asp-action="Index"><i class="badge-info bi-film"></i>
+            Movies</a>
+            </li>
+
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="button"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="bi bi-gear"></i> Managment</a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" asp-controller="Cinemas" asp-action="Index"><i class="bi
+            bi-camera-reels"></i>Cinemas</a>
+            <a class="dropdown-item" asp-controller="Producers" asp-action="Index"><i class="bi
+            bi-headset"></i>Producers</a>
+            <a class="dropdown-item" asp-controller="Actors" asp-action="Index"><i class="bi
+            bi-person-square"></i>Actors</a>
+            </div>
+            </li>
+
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0" asp-controller="Movies" asp-action="Filter" style="padding-right: 25px;">
+            <input name="searchString" type="text" class="form-control" placeholder="Search for a movie..." />
+            <button class="btn btn-outline-success my-2 my-sm-0 " type="submit"><i class="bi bi-search"></i></button>
+            </form>
+            </div>
+            </div>
+            </nav> *@
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-controller="Movies" asp-action="Index">e_tickey</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" asp-controller="Movies" asp-action="Index">Movies
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        @* <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li> *@
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" asp-route="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Managment</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" asp-controller="Cinemas" asp-action="Index">Cinemas</a>
+                                <a class="dropdown-item" asp-controller="Producers" asp-action="Index">Producers</a>
+                                <a class="dropdown-item" asp-controller="Actors" asp-action="Index">Actors</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" asp-route="#">Separated link</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="d-flex" asp-controller="Movies" asp-action="Filter">
+                        <input class="form-control me-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="bi bi-search"></i>Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - e_tickey
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
