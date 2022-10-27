@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9SQ5nhOt+lUnWk39PCNcyiJOSepTF7Lpl/ORaMkodP62PnEaq3SXqiGR7JIQBlKLWoj3AacmSugH3cKuPHx5UA==",
+  "dgSpecHash": "Nz/ip9aDgFdIg/rj/A1bXAH9L/nkhSKPMG+F6528pd62GlR+VS35ka3E+2emiuTA1/V3B/syIfEOn2t7CbTrFg==",
   "success": true,
-  "projectFilePath": "C:\\Projetos_C#\\e_tickey\\e_tickey.csproj",
+  "projectFilePath": "C:\\Projetos_AspNet\\e_tickey\\e_tickey.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guto\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\guto\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
