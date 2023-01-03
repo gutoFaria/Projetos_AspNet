@@ -1,0 +1,12 @@
+C:\Produto\backend\Produto.Models\bin\Debug\net7.0\Produto.Models.deps.json
+C:\Produto\backend\Produto.Models\bin\Debug\net7.0\Produto.Models.dll
+C:\Produto\backend\Produto.Models\bin\Debug\net7.0\Produto.Models.pdb
+C:\Produto\backend\Produto.Models\obj\Debug\net7.0\Produto.Models.csproj.AssemblyReference.cache
+C:\Produto\backend\Produto.Models\obj\Debug\net7.0\Produto.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Produto\backend\Produto.Models\obj\Debug\net7.0\Produto.Models.AssemblyInfoInputs.cache
+C:\Produto\backend\Produto.Models\obj\Debug\net7.0\Produto.Models.AssemblyInfo.cs
+C:\Produto\backend\Produto.Models\obj\Debug\net7.0\Produto.Models.csproj.CoreCompileInputs.cache
+C:\Produto\backend\Produto.Models\obj\Debug\net7.0\Produto.Models.dll
+C:\Produto\backend\Produto.Models\obj\Debug\net7.0\refint\Produto.Models.dll
+C:\Produto\backend\Produto.Models\obj\Debug\net7.0\Produto.Models.pdb
+C:\Produto\backend\Produto.Models\obj\Debug\net7.0\ref\Produto.Models.dll

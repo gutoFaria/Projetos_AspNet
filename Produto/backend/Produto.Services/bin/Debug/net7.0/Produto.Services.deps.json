@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Produto.Services/1.0.0": {
+        "dependencies": {
+          "Produto.Models": "1.0.0"
+        },
+        "runtime": {
+          "Produto.Services.dll": {}
+        }
+      },
+      "Produto.Models/1.0.0": {
+        "runtime": {
+          "Produto.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Produto.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Produto.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

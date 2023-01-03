@@ -1,0 +1,31 @@
+@model IEnumerable<Materia>
+
+<div class="text-center p-2">
+    <h2>Materias</h2>
+
+    <table class="table table-bordered table-striped table-sm">
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Imagem</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Materia item in Model)
+            {
+                <tr>
+                    <td>@item.Titulo</td>
+                    <td>
+                        <img src="@item.ImageUrl" style="width: 50px;" alt="imagem">
+                    </td>
+                    <td>
+                        <a asp-action="EditarMateria" asp-route-id="@item.MateriaId">Editar</a> |
+                        <a asp-action="DetalhesMateria" asp-route-id="@item.MateriaId">Detalhes</a> |
+                        <a asp-action="DeletarMateria" asp-route-id="@item.MateriaId">Remover</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a asp-action="CreateMateria">Cadastrar nova materia</a>
+</div>

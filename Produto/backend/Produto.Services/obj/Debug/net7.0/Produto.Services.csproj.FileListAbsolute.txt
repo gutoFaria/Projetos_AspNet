@@ -1,0 +1,15 @@
+C:\Produto\backend\Produto.Services\bin\Debug\net7.0\Produto.Services.deps.json
+C:\Produto\backend\Produto.Services\bin\Debug\net7.0\Produto.Services.dll
+C:\Produto\backend\Produto.Services\bin\Debug\net7.0\Produto.Services.pdb
+C:\Produto\backend\Produto.Services\bin\Debug\net7.0\Produto.Models.dll
+C:\Produto\backend\Produto.Services\bin\Debug\net7.0\Produto.Models.pdb
+C:\Produto\backend\Produto.Services\obj\Debug\net7.0\Produto.Services.csproj.AssemblyReference.cache
+C:\Produto\backend\Produto.Services\obj\Debug\net7.0\Produto.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Produto\backend\Produto.Services\obj\Debug\net7.0\Produto.Services.AssemblyInfoInputs.cache
+C:\Produto\backend\Produto.Services\obj\Debug\net7.0\Produto.Services.AssemblyInfo.cs
+C:\Produto\backend\Produto.Services\obj\Debug\net7.0\Produto.Services.csproj.CoreCompileInputs.cache
+C:\Produto\backend\Produto.Services\obj\Debug\net7.0\Produto.Services.csproj.CopyComplete
+C:\Produto\backend\Produto.Services\obj\Debug\net7.0\Produto.Services.dll
+C:\Produto\backend\Produto.Services\obj\Debug\net7.0\refint\Produto.Services.dll
+C:\Produto\backend\Produto.Services\obj\Debug\net7.0\Produto.Services.pdb
+C:\Produto\backend\Produto.Services\obj\Debug\net7.0\ref\Produto.Services.dll
