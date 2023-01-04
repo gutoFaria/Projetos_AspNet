@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Produto>
+
+@{
+    ViewData["Title"] = "Home Page";
+    string[] ti = new string[] { "Código", "Nome do Produto", "Quantidade", "Preço" };
+}
+
+<div class="table text-center">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                @foreach (var item in ti)
+                {
+                    <th>
+                        @item
+                    </th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th>@item.Cod</th>
+                    <th>@item.Nome</th>
+                    <th>@item.Qtd</th>
+                    <th>@item.Preco</th>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+<div class="text-center">
+    <form method="post" asp-controller="Home" asp-action="PDF">
+        <input type="submit" value="Gerar PDF" class="btn btn-primary"/>
+    </form>
+</div> 
