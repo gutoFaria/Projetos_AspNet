@@ -1,0 +1,9 @@
+@model IEnumerable<ecommerce.Models.Product>
+
+@foreach (var item in Model)
+{
+    <img src="@item.ImageUrl" height="100" width="100">
+    <a asp-controller="Product" asp-action="Detail" asp-route-id="@item.Id"><h3>@item.Name</h3></a>
+    <p>@item.Price.ToString("c")</p>
+}
+
