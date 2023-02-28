@@ -1,0 +1,25 @@
+@model IEnumerable<ShopingCartItem>
+@{
+
+}
+<h1>Shopping Cart</h1>
+
+<table>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Product?.ImageUrl</td>
+                <td>@item.Product?.Name</td>
+                <td>@item.Product?.Price</td>
+                <td>
+                    <a class="btn btn-danger">remove</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3>Summary</h3>
+<hr/>
+<p>TOTAL PRICE      </p>

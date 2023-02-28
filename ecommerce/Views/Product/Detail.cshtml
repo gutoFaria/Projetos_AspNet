@@ -4,3 +4,4 @@
 <h3>@Model.Name</h3>
 <p>@Model.Detail</p>
 <h5>@Model.Price</h5>
+<a asp-controller="ShoppingCart" asp-action="AddShopingCart" asp-action-pId="@Model.Id" class="btn btn-primary">Add To Cart</a>
